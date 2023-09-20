@@ -5,11 +5,7 @@ import android.view.View
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.interrapidismotest.App
 import com.example.interrapidismotest.R
-import com.example.interrapidismotest.data.repository.TableRepository
-import com.example.interrapidismotest.dataapp.database.TableLocalDataSourceImpl
-import com.example.interrapidismotest.dataapp.server.TableRemoteDataSourceImpl
 import com.example.interrapidismotest.databinding.FragmentMenuBinding
 import com.example.interrapidismotest.ui.common.TablesNamesAdapter
 import com.example.interrapidismotest.ui.common.diff
@@ -18,23 +14,12 @@ import com.example.interrapidismotest.ui.common.setVisibleOrGone
 import com.example.interrapidismotest.ui.common.showErrorSnackBar
 import com.example.interrapidismotest.ui.common.toggleText
 import com.example.interrapidismotest.ui.common.toggleVisibility
-import com.example.interrapidismotest.usecases.tables.GetTablesUseCase
-import com.example.interrapidismotest.usecases.tables.RequestTablesUseCase
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MenuFragment : Fragment(R.layout.fragment_menu) {
 
-    private val viewModel: MenuViewModel by viewModels {
-        val app = requireActivity().applicationContext as App
-        val repository = TableRepository(
-            TableLocalDataSourceImpl(app.db.tableDao()),
-            TableRemoteDataSourceImpl("admin")
-        )
-        MenuViewModelFactory(
-            GetTablesUseCase(repository),
-            RequestTablesUseCase(repository)
-        )
-    }
+    private val viewModel: MenuViewModel by viewModels()
 
     private val adapter = TablesNamesAdapter()
 

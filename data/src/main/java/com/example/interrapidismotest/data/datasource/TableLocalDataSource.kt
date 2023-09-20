@@ -9,7 +9,5 @@ interface TableLocalDataSource {
 
     suspend fun isEmpty(): Boolean
 
-    fun findTableByName(tableName: String): Flow<Table>
-
     suspend fun save(tables: List<Table>): Error?
 }

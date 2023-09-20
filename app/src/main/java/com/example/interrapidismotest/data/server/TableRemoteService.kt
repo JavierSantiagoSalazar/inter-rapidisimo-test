@@ -1,4 +1,4 @@
-package com.example.interrapidismotest.dataapp.server
+package com.example.interrapidismotest.data.server
 
 import retrofit2.http.GET
 import retrofit2.http.Header
