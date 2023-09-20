@@ -3,8 +3,9 @@ package com.example.interrapidismotest.data.repository
 import com.example.interrapidismotest.data.datasource.TableLocalDataSource
 import com.example.interrapidismotest.data.datasource.TableRemoteDataSource
 import com.example.interrapidismotest.domain.Error
+import javax.inject.Inject
 
-class TableRepository(
+class TableRepository @Inject constructor(
     private val localDataSource: TableLocalDataSource,
     private val remoteDataSource: TableRemoteDataSource
 ) {

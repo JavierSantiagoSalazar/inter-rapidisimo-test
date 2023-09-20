@@ -16,4 +16,5 @@ dependencies {
     implementation(project(":domain"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation("io.arrow-kt:arrow-core:1.1.5")
+    implementation("javax.inject:javax.inject:1")
 }

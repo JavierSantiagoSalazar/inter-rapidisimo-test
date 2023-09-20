@@ -6,9 +6,10 @@ import com.example.interrapidismotest.domain.Error
 import com.example.interrapidismotest.domain.Table
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 import com.example.interrapidismotest.data.database.Table as DbTable
 
-class TableLocalDataSourceImpl(
+class TableLocalDataSourceImpl @Inject constructor(
     private val tableDao: TableDao,
 ) : TableLocalDataSource {
 
