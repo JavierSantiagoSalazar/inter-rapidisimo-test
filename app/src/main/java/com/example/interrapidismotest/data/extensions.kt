@@ -1,4 +1,4 @@
-package com.example.interrapidismotest.dataapp
+package com.example.interrapidismotest.data
 
 import arrow.core.Either
 import arrow.core.left

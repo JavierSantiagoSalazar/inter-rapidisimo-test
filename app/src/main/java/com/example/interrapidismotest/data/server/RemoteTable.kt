@@ -1,4 +1,4 @@
-package com.example.interrapidismotest.dataapp.server
+package com.example.interrapidismotest.data.server
 
 import com.google.gson.annotations.SerializedName
 

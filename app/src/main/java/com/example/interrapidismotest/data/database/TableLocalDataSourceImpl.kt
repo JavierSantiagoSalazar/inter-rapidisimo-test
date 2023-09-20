@@ -1,12 +1,12 @@
-package com.example.interrapidismotest.dataapp.database
+package com.example.interrapidismotest.data.database
 
 import com.example.interrapidismotest.data.datasource.TableLocalDataSource
-import com.example.interrapidismotest.dataapp.tryCall
+import com.example.interrapidismotest.data.tryCall
 import com.example.interrapidismotest.domain.Error
 import com.example.interrapidismotest.domain.Table
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import com.example.interrapidismotest.dataapp.database.Table as DbTable
+import com.example.interrapidismotest.data.database.Table as DbTable
 
 class TableLocalDataSourceImpl(
     private val tableDao: TableDao,
@@ -23,10 +23,6 @@ class TableLocalDataSourceImpl(
             ifLeft = { it },
             ifRight = { null }
         )
-
-    override fun findTableByName(tableName: String): Flow<Table> =
-        tableDao.findByName(tableName).map { it.toDomainModel() }
-
 }
 
 private fun List<DbTable>.toDomainModel(): List<Table> =

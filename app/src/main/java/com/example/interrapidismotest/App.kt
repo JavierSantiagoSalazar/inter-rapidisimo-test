@@ -2,7 +2,7 @@ package com.example.interrapidismotest
 
 import android.app.Application
 import androidx.room.Room
-import com.example.interrapidismotest.dataapp.database.TableDatabase
+import com.example.interrapidismotest.data.database.TableDatabase
 
 class App : Application() {
 

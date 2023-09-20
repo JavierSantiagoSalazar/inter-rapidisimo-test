@@ -1,4 +1,4 @@
-package com.example.interrapidismotest.usecases.tables
+package com.example.interrapidismotest.usecases
 
 import com.example.interrapidismotest.data.repository.TableRepository
 import com.example.interrapidismotest.domain.Table

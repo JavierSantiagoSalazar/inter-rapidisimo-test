@@ -3,11 +3,11 @@ package com.example.interrapidismotest.ui.tablesmenu
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.example.interrapidismotest.dataapp.toError
+import com.example.interrapidismotest.data.toError
 import com.example.interrapidismotest.domain.Error
 import com.example.interrapidismotest.domain.Table
-import com.example.interrapidismotest.usecases.tables.GetTablesUseCase
-import com.example.interrapidismotest.usecases.tables.RequestTablesUseCase
+import com.example.interrapidismotest.usecases.GetTablesUseCase
+import com.example.interrapidismotest.usecases.RequestTablesUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,4 +1,4 @@
-package com.example.interrapidismotest.dataapp.database
+package com.example.interrapidismotest.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert

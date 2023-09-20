@@ -1,8 +1,8 @@
-package com.example.interrapidismotest.dataapp.server
+package com.example.interrapidismotest.data.server
 
 import arrow.core.Either
 import com.example.interrapidismotest.data.datasource.TableRemoteDataSource
-import com.example.interrapidismotest.dataapp.tryCall
+import com.example.interrapidismotest.data.tryCall
 import com.example.interrapidismotest.di.annotations.User
 import com.example.interrapidismotest.domain.Error
 import com.example.interrapidismotest.domain.Table
