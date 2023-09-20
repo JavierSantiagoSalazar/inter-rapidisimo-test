@@ -2,9 +2,18 @@
     <!--Global-->
     <string name="app_name">InterRapidismoTest</string>
 
-    <!--MainActivity-->
-    <string name="main_button_get_data">Get Data</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--MenuFragment-->
+    <string name="menu_button_get_data">Get Tables</string>
+    <string name="menu_button_show_data">Show Tables</string>
+    <string name="menu_button_hide_data">Hide Tables</string>
+    <string name="menu_et_table_name">Write the name of the table here</string>
+    <string name="menu_tv_nothing">Nothing to show, please press \'Get Tables\'</string>
+    <string name="menu_tv_full">To see the data, please press \'Show Tables\'</string>
+    <string name="connectivity_error">Looks like you don\'t have internet connection, please try again.</string>
+    <string name="snack_bar_try_again_message">Try again</string>
+    <string name="server_error">"Internal server error with code: "</string>
+    <string name="unknown_error">"Unknown error: "</string>
+    <string name="snack_bar_dismiss_message">Dismiss</string>
+
 
 </resources>
