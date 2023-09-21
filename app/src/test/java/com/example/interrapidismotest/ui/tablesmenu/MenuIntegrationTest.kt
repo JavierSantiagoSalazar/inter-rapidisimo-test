@@ -1,9 +1,9 @@
 package com.example.interrapidismotest.ui.tablesmenu
 
 import app.cash.turbine.test
-import com.example.interrapidismotest.buildDatabaseTables
-import com.example.interrapidismotest.buildRemoteTables
-import com.example.interrapidismotest.buildTableRepositoryWith
+import com.example.interrapidismotest.apptestshared.buildDatabaseTables
+import com.example.interrapidismotest.apptestshared.buildRemoteTables
+import com.example.interrapidismotest.apptestshared.buildTableRepositoryWith
 import com.example.interrapidismotest.data.server.RemoteTable
 import com.example.interrapidismotest.testrules.CoroutinesTestRule
 import com.example.interrapidismotest.ui.tablesmenu.MenuViewModel.UiState

@@ -1,4 +1,4 @@
-package com.example.interrapidismotest
+package com.example.interrapidismotest.apptestshared
 
 import com.example.interrapidismotest.data.database.TableDao
 import com.example.interrapidismotest.data.server.RemoteTable
