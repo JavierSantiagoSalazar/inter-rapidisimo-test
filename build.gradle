@@ -14,5 +14,6 @@ buildscript {
         classpath Libs.gradleKspPlugin
         classpath Libs.Hilt.gradlePlugin
         classpath Libs.gradleVersionsPlugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10'
     }
 }

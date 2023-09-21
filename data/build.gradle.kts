@@ -10,13 +10,19 @@ dependencies {
     implementation(Libs.Kotlin.Coroutines.core)
     implementation(Libs.JavaX.inject)
     implementation(Libs.Arrow.core)
+
+    testImplementation(project(":testShared"))
+    testImplementation(Libs.JUnit.junit)
+    testImplementation(Libs.Mockito.kotlin)
+    testImplementation(Libs.Mockito.inline)
+    testImplementation(Libs.Kotlin.Coroutines.test)
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(17)
 }
