@@ -1,4 +1,4 @@
-package com.example.interrapidismotest
+package com.example.interrapidismotest.apptestshared
 
 import com.example.interrapidismotest.data.database.TableLocalDataSourceImpl
 import com.example.interrapidismotest.data.repository.TableRepository
@@ -32,7 +32,7 @@ fun buildDatabaseTables(vararg names: String) = names.map {
 fun buildRemoteTables(vararg name: String) = name.map {
     RemoteTable(
         tableName = it,
-        primaryKey = "PrimaryKey",
+        primaryKey = "PrimaryKey $it",
         queryCreation = "",
         batchSize = 1,
         filter = "",

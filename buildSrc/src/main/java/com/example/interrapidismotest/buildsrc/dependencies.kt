@@ -69,12 +69,6 @@ object Libs {
         const val loginInterceptor = "com.squareup.okhttp3:logging-interceptor:$version"
     }
 
-    object Glide {
-        private const val version = "4.15.1"
-        const val glide = "com.github.bumptech.glide:glide:$version"
-        const val compiler = "com.github.bumptech.glide:compiler:$version"
-    }
-
     object Retrofit {
         private const val version = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$version"
