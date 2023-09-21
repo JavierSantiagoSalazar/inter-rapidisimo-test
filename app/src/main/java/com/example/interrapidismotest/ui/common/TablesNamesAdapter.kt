@@ -19,8 +19,8 @@ class TablesNamesAdapter :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val movie = getItem(position)
-        holder.bind(movie)
+        val table = getItem(position)
+        holder.bind(table)
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

@@ -7,6 +7,6 @@ interface TableRemoteService {
 
     @GET("ObtenerEsquema/true/")
     suspend fun getTablesData(
-        @Header("usuario") region: String
+        @Header("usuario") user: String
     ): List<RemoteTable>
 }

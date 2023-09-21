@@ -12,9 +12,6 @@ interface TableDao {
     @Query("SELECT * FROM `Table`")
     fun getAll(): Flow<List<Table>>
 
-    @Query("SELECT * FROM `Table` WHERE tableName = :tableName")
-    fun findByName(tableName: String): Flow<Table>
-
     @Query("SELECT COUNT(tableName) FROM `Table`")
     suspend fun tableCount(): Int
 

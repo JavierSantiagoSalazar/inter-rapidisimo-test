@@ -24,9 +24,10 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDatabase(app: Application) = Room.inMemoryDatabaseBuilder(
+    fun provideDatabase(app: Application) = Room.databaseBuilder(
         app,
-        TableDatabase::class.java
+        TableDatabase::class.java,
+        "table-db"
     ).build()
 
     @Provides
